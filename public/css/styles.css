@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.order{
+  margin:auto;
+  display:inline-flexbox;
+  padding-left: 2%;
+}
+.card {
+  width: 60%;
+  height: 80%;
+  margin:auto;
+  max-height: 300px;
+  padding: auto;
+  text-align: center;
+  background: #242625;
+  border-radius: 10px;
+}
+.card__container {
+  display:table;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  color: white;
+}
+.card__content {
+  width: 90%;
+  height: 95%;
+  background: #191a19;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.card__header {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 40px auto;
+}
+.card__button {
+  padding: 10px;
+  border-radius: 50px;
+  background: #1f75c4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin: 50px auto;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 18px 'Open Sans', sans-serif;
+    background: #fafafa;
+    color: #333;
+}
+
+main {
+    min-height: 100vh;
+}
+#heading{
+    display: inline-block;
+    text-align: center;
+  
+}
+
+header {
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+th{
+    margin: auto;
+    flex-wrap: wrap;
+    text-align: center;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table{
+  width:100%;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+}
+    h1{
+        font: normal 4em 'Playfair Display SC', serif;
+        text-align:center;
+    }
+    h2{
+      font:normal 4em'Playfair Display SC', serif;
+
+    }
+    #registro{
+      margin: auto;
+      width: 20%;
+      border: 3px solid green;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+        nav a {
+            flex-grow: 1;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+        }
+
+    
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right:0;
+            height: 2px;
+            transform: scaleX(0);
+            background: #333;
+            transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+        }
+
+        nav a:hover::after{
+            transform: scaleX(1)
+        }
+
+  
+
+
+/*# sourceMappingURL=styles.css.map */
